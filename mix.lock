@@ -14,8 +14,6 @@
   "gettext": {:hex, :gettext, "0.10.0"},
   "hackney": {:hex, :hackney, "1.5.7"},
   "httpoison": {:hex, :httpoison, "0.8.2"},
-  "httpotion": {:hex, :httpotion, "2.2.2"},
-  "ibrowse": {:hex, :ibrowse, "4.2.2"},
   "idna": {:hex, :idna, "1.2.0"},
   "jsx": {:git, "https://github.com/talentdeficit/jsx.git", "3074d4865b3385a050badf7828ad31490d860df5", []},
   "metrics": {:hex, :metrics, "1.0.1"},
@@ -32,5 +30,4 @@
   "providers": {:hex, :providers, "1.4.1"},
   "ranch": {:hex, :ranch, "1.2.1"},
   "relx": {:hex, :relx, "3.5.0"},
-  "sh": {:git, "https://github.com/devinus/sh.git", "3ea6b37fbb2e93522946472f06884e738aaf5d6e", []},
   "ssl_verify_fun": {:hex, :ssl_verify_fun, "1.1.0"}}

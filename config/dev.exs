@@ -40,3 +40,4 @@ config :pi_weather, PiWeather.Repo,
   database: "pi_weather_dev",
   hostname: "localhost",
   pool_size: 10
+

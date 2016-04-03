@@ -9,14 +9,14 @@ defmodule PiWeather.Periodically do
   end
 
   def init(state) do
-    start_every_ten_minutes	
+    start_every_fifteen_minutes	
     {:ok, state}
   end
 
   def handle_info(:work, state) do
     ApiClient.post("readouts", prepare_params) 
 		
-    start_every_ten_minutes
+    start_every_fifteen_minutes
  	
     {:noreply, state}
   end
@@ -34,5 +34,5 @@ defmodule PiWeather.Periodically do
      }		  		
   end
 
-  defp start_every_ten_minutes, do: Process.send_after(self(), :work, 60*10)
+  defp start_every_fifteen_minutes, do: Process.send_after(self(), :work, 600000)
 end

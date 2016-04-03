@@ -12,7 +12,7 @@ defmodule PiWeather do
       # Start the Ecto repository
       supervisor(PiWeather.Repo, []),
       # Here you could define other workers and supervisors as children
-      # worker(PiWeather.Worker, [arg1, arg2, arg3]),
+      worker(PiWeather.Periodically, []),
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html

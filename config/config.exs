@@ -27,3 +27,6 @@ import_config "#{Mix.env}.exs"
 config :phoenix, :generators,
   migration: true,
   binary_id: false
+
+config :exowm,
+	APPID: "babd1edebf2e8a07bc7217d919a84860"
