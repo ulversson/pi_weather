@@ -18,7 +18,7 @@ defmodule PiWeather.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [mod: {PiWeather, []},
-     applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext,
+     applications: [:phoenix, :phoenix_html,  :httpoison, :cowboy, :logger, :gettext,
                     :phoenix_ecto, :postgrex]]
   end
 
@@ -37,6 +37,8 @@ defmodule PiWeather.Mixfile do
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.9"},
      {:cowboy, "~> 1.0"},
+     {:httpoison, "~> 0.8.0"},
+     {:jsx, github: "talentdeficit/jsx"},
      {:exrm, "~> 0.19"}]
   end
 

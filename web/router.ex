@@ -20,7 +20,8 @@ defmodule PiWeather.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", PiWeather do
-  #   pipe_through :api
-  # end
+  scope "/api/v1", PiWeather do
+    pipe_through :api
+    resources "/readouts", ReadoutController, except: [:new, :edit]
+  end
 end

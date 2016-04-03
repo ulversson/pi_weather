@@ -35,8 +35,8 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :pi_weather, PiWeather.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  username: "pi_weather",
+  password: "pi_weather",
   database: "pi_weather_dev",
   hostname: "localhost",
   pool_size: 10
